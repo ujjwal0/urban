@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Axios from 'axios';
+import "./ls.css"
 export default function Signup() {
  const [name,setname]=useState("");
  const [email,setemail]=useState("");
@@ -20,25 +21,22 @@ export default function Signup() {
 }
  
   return (
-    <div>
-        <>
-            <label htmlFor="name" >Name: </label>
-            <input type="text" name="name"  value={name} onChange={(e)=>{
+    <div className='main'>
+        <div className='signup'>
+        <label for="chk" aria-hidden="true">Signup</label>
+            <input placeholder='user name' type="text" name="name"  value={name} onChange={(e)=>{
                 setname(e.target.value)
             }} />
-            <br />
-            <label htmlFor="email">email: </label>
-            <input type="email" name="email" value={email}  onChange={(e)=>{
+            <input placeholder='email' type="email" name="email" value={email}  onChange={(e)=>{
                 setemail(e.target.value)
             }}/>
-            <br />
-            <label htmlFor="password">password: </label>
-            <input type="password" name="password" value={password}  onChange={(e)=>{
+            <input placeholder='password' type="password" name="password" value={password}  onChange={(e)=>{
                 setpassword(e.target.value)
             }} />
-            <br />
-            <button onClick={addDetails}>submit</button>
-       </>
+            <button style={{marginTop:"35px"}} onClick={addDetails}>Signup</button>
+            <button style={{marginTop:"35px"}}><a style={{color:"white",textDecoration:"none"}} href='/login'>Login</a></button>
+
+       </div>
   </div>
   )
 }

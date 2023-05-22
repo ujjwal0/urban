@@ -1,12 +1,12 @@
+import { useState } from 'react';
 import './App.css';
-import Login from './components/Login';
-import Signup from './components/Signup';
-
+import Routing from "./Routing"
 function App() {
+
+  const [allow,setallow]=useState(false);
   return (
     <div>
-      {/* <Login></Login> */}
-      <Signup></Signup>
+      <Routing allow={allow} setallow={setallow} ></Routing>
     </div>
   );
 }
