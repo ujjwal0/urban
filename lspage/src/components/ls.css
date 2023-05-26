@@ -1,15 +1,17 @@
-body{
+ body{
 	margin: 0;
 	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	/* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
     background: linear-gradient(120deg, #2980b9, #8e44ad);
-}
+	background-repeat: no-repeat;
+} 
+
 .main{
+	position: absolute;
+	bottom: 10%;
+	right: 37%;
 	width: 350px;
 	height: 500px;
 	background: red;

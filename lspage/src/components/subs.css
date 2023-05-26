@@ -1,0 +1,27 @@
+.crous{
+    margin-top: -17px;
+    
+}
+.croussize{
+    /* background-size: contain; */
+    object-fit: cover;
+    height: 490px;
+    width: 100%;
+}
+.carddiv{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.cd{
+    margin-left: 8%;
+    box-shadow: 5px 5px 5px 0px rgba(231, 227, 227, 0.3);
+    filter: drop-shadow(5px 5px 5px rgba(200, 192, 192, 0.3));
+    /* position: relative; */
+
+}
+
+.cards{
+    height: 250px;
+    width: 100px;
+}

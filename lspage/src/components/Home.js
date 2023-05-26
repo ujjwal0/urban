@@ -1,6 +1,7 @@
 import React from 'react'
 import {useNavigate} from "react-router-dom"
 import "./home.css"
+
 import shoe from "./images/Shoe.png"
 export default function Home(props) {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export default function Home(props) {
         <div className='left'>
           <h1 className='left-heading'>Find your<br/> dream Sneakers</h1>
           <p className='left-para'>Find your shoes from various collections.<br/>Here shoes are endless and porfit is endless</p>
-          <button className='left-button'>Explore now</button>
+          <button onClick={()=>{navigate('/Subscription')}} className='left-button'>Explore now</button>
         </div>
         <div className='circle'>
           <div className='shoecont'>
